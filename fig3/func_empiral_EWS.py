@@ -143,8 +143,8 @@ def draw_AMOC(input_axs1,input_axs2,amoc_1_list,amoc_2_list):
     input_axs2.plot(amoc_time1, amoc_lab_1, c=line_c1, lw=2, label='HadCRUT5 Mean', alpha=0.6)
     linear_fit_image(amoc_time1, amoc_lab_1, input_axs2, 1, line_c1, lw=1.8)
     input_axs2.fill_between(amoc_time2, amoc_lab_max_2, amoc_lab_min_2, color=range_c2, alpha=alp, edgecolor=None,
-                        label='ERRSTv5 ensemble range')
-    input_axs2.plot(amoc_time2, amoc_lab_2, c=line_c2, lw=2, label='ERRSTv5 Mean', alpha=0.6)
+                        label='ERSSTv5 ensemble range')
+    input_axs2.plot(amoc_time2, amoc_lab_2, c=line_c2, lw=2, label='ERSSTv5 Mean', alpha=0.6)
     linear_fit_image(amoc_time2, amoc_lab_2,input_axs2, 1, line_c2, lw=1.8)
 
     input_axs2.set_xlabel(r'Time [yr]', **font_legend)
